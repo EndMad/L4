@@ -7,7 +7,8 @@ if __name__ == '__main__':
     s = input("Введите предложение: ")
     n = int(input("Введите длину: "))
     if len(s) >= n:
-        print("Заданная длина должна быть больше длины предложения", file=sys.stderr)
+        print("Заданная длина должна быть больше длины предложения",
+              file=sys.stderr)
         exit(1)
     words = s.split(' ')
     if len(words) < 2:
