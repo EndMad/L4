@@ -4,9 +4,10 @@
 # Дано предложение. Вывести «столбиком» все его буквы и,
 # стоящие на четных местах.
 
-print("Введите предложение")
-print(
-    *(letter for i,
-        letter in enumerate(input()) if letter == "и" and not i % 2),
-    sep="\n"
-)
+if __name__ == '__main__':
+    print("Введите предложение")
+    print(
+        *(letter for i,
+            letter in enumerate(input()) if letter == "и" and not i % 2),
+        sep="\n"
+    )
